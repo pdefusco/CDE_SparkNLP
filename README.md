@@ -19,10 +19,13 @@ You can use CDE Sessions in CDE Virtual Clusters of type "All Purpose - Tier 2".
 % cde resource create --name text-data
 
 % cde resource upload --name sparknlp-env \
-                      --local-path sparknlp_deps/requirements.txt
+                      --local-path requirements.txt
 
 % cde resource upload --name text-data \
                       --local-path data/news_category_test.csv
+
+% cde resource upload --name text-data \
+                      --local-path test.py
 
 % cde session create --name cde-spark-nlp \
                      --type pyspark
